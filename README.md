@@ -1,5 +1,5 @@
 # 💫 About Me:
-👨‍💻 About Me<br>🔭 Computer Science student at IIIT Bhubaneshwar<br>🌱 I’m currently learning C++, Python, C and exploring<br>👯 I’m looking to collaborate on data science based projects<br>💬 Ask me about low level programming, machine learning<br>📫 How to reach me: rishavkumar2k07@gmail.com<br>⚡ Fun fact: I am a percussionist and love to workout
+👨‍💻 About Me<br>🔭 Computer Science student at IIIT Bhubaneshwar<br>🌱 I’m currently learning C++, Python, C and exploring<br>👯 I’m looking to collaborate on data science based projects<br>💬 Ask me about low level programming, machine learning<br>📫 How to reach me: rishavkumar2k07@gmail.com<br>⚡ Fun fact: I am a percussionist and love to workout and run
 
 
 ## 🌐 Socials:
