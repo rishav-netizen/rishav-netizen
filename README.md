@@ -1,6 +1,6 @@
 <!-- Header Banner -->
 <div align="center">
-  <img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&height=200&section=header&text=Hi%2C%20I'm%20Rishav%20%F0%9F%91%8B&fontSize=42&fontAlignY=38&desc=CS%20Undergrad%20%7C%20Systems%20%26%20ML%20Enthusiast%20%7C%20Percussionist%20%F0%9F%A5%81&descAlignY=58&descAlign=50" width="100%" alt="Header Banner" />
+  <img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&height=200&section=header&text=Hi%2C%20I'm%20Rishav%20%F0%9F%91%8B&fontSize=42&fontAlignY=38&desc=CS%20Undergrad%20%7C%20Systems%20and%20ML%20Enthusiast%20%7C%20Percussionist&descAlignY=58&descAlign=50" width="100%" alt="Header Banner" />
 
   <!-- Animated Typing Subtitle -->
   <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=20&duration=3000&pause=1000&color=61AFEF&center=true&vcenter=true&width=600&lines=Computer+Science+%40+IIIT+Bhubaneswar;Exploring+C%2B%2B%2C+Python%2C+C+%26+Rust;Low-Level+Programming+%26+Machine+Learning;Passionate+Percussionist+%26+Fitness+Lover+%E2%9A%A1" alt="Typing SVG" />
