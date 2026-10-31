@@ -105,7 +105,7 @@
 
 <div align="center">
   <img src="https://github-readme-stats.shion.dev/api?username=rishav-netizen&show_icons=true&theme=radical&rank_icon=github&hide_border=false" alt="Rishav's GitHub Stats" />
-  <img src="https://streak-stats.demolab.com/?user=rishav-netizen&theme=radical&hide_border=false&timezone=Asia/Kolkata" alt="GitHub Streak" />
+  <img src="https://streak-stats.demolab.com/?user=rishav-netizen&theme=radical&hide_border=false&timezone=Asia/Calcutta" alt="GitHub Streak" />
 </div>
 
 <br/>
