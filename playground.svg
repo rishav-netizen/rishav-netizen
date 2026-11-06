@@ -1,0 +1,236 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1080 420" width="100%" height="100%">
+  <defs>
+    <pattern id="dotsBg" width="18" height="18" patternUnits="userSpaceOnUse">
+      <circle cx="3" cy="3" r="1.3" fill="#0F0F0F" opacity="0.12" />
+    </pattern>
+  </defs>
+
+  <style>
+    .card-kicker {
+      font: 900 11px 'Arial Black', 'Helvetica Neue', sans-serif;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+    }
+    .card-head {
+      font: 900 28px 'Impact', 'Arial Black', sans-serif;
+      letter-spacing: -0.5px;
+      text-transform: uppercase;
+    }
+    .card-copy {
+      font: 700 13.5px 'Georgia', serif;
+      fill: #0F0F0F;
+    }
+    .pill-stamp {
+      font: 900 11.5px 'Arial Black', 'Helvetica Neue', sans-serif;
+      letter-spacing: 0.6px;
+    }
+    .tape-label {
+      font: italic 700 11px 'Georgia', serif;
+      fill: #0F0F0F;
+    }
+
+    @keyframes gearSpin {
+      from { transform: rotate(0deg); }
+      to { transform: rotate(360deg); }
+    }
+    @keyframes metronomeSwing {
+      0%, 100% { transform: rotate(-26deg); }
+      50% { transform: rotate(26deg); }
+    }
+    @keyframes radarSweep {
+      0%, 100% { transform: translateX(0px); }
+      50% { transform: translateX(62px); }
+    }
+    @keyframes cardWiggle1 {
+      0%, 100% { transform: translate(24px, 26px) rotate(-1.4deg); }
+      50% { transform: translate(24px, 21px) rotate(-0.6deg); }
+    }
+    @keyframes cardWiggle2 {
+      0%, 100% { transform: translate(378px, 22px) rotate(1.1deg); }
+      50% { transform: translate(378px, 27px) rotate(0.3deg); }
+    }
+    @keyframes cardWiggle3 {
+      0%, 100% { transform: translate(732px, 26px) rotate(-1.2deg); }
+      50% { transform: translate(732px, 20px) rotate(-0.4deg); }
+    }
+
+    .card-1 { animation: cardWiggle1 4.5s ease-in-out infinite; }
+    .card-2 { animation: cardWiggle2 5.1s ease-in-out infinite; }
+    .card-3 { animation: cardWiggle3 4.8s ease-in-out infinite; }
+    .gear-rot { animation: gearSpin 9s linear infinite; transform-origin: 280px 58px; }
+    .scan-bar { animation: radarSweep 2.4s ease-in-out infinite; }
+    .pendulum { animation: metronomeSwing 0.85s ease-in-out infinite; transform-origin: 278px 82px; }
+  </style>
+
+  <!-- CARD 1: UNDER THE HOOD (SYSTEMS & LOW-LEVEL) -->
+  <g class="card-1">
+    <!-- Hard Offset Shadow -->
+    <rect x="8" y="8" width="322" height="364" rx="16" fill="#0F0F0F" />
+    <rect x="0" y="0" width="322" height="364" rx="16" fill="#F5F0E6" stroke="#0F0F0F" stroke-width="3.5" />
+    <rect x="0" y="0" width="322" height="364" rx="16" fill="url(#dotsBg)" />
+
+    <!-- Top Color Header Band -->
+    <path d="M 0 16 Q 0 0 16 0 L 306 0 Q 322 0 322 16 L 322 96 L 0 96 Z" fill="#0038FF" stroke="#0F0F0F" stroke-width="3.5" />
+
+    <!-- Masking Tape Strip -->
+    <rect x="108" y="-12" width="106" height="24" rx="2" fill="#FFC700" stroke="#0F0F0F" stroke-width="2" transform="rotate(-3 161 0)" />
+    <text x="134" y="4" class="tape-label">side A</text>
+
+    <!-- Spinning Mechanical Gear Icon -->
+    <g class="gear-rot">
+      <circle cx="280" cy="58" r="22" fill="#FFC700" stroke="#0F0F0F" stroke-width="2.5" stroke-dasharray="8 5" />
+      <circle cx="280" cy="58" r="9" fill="#0038FF" stroke="#0F0F0F" stroke-width="2.5" />
+    </g>
+
+    <text x="24" y="42" class="card-kicker" fill="#FFC700">UNDER THE HOOD</text>
+    <text x="24" y="76" class="card-head" fill="#F5F0E6">BARE METAL &amp; CORE</text>
+
+    <text x="24" y="128" class="card-copy">Writing C, C++ &amp; Rust until the</text>
+    <text x="24" y="148" class="card-copy">compiler stops yelling—memory</text>
+    <text x="24" y="168" class="card-copy">layouts, Raylib graphics &amp; hardware.</text>
+
+    <!-- Tactile Stamped Tags -->
+    <g transform="translate(24, 192)">
+      <rect x="3" y="3" width="64" height="32" rx="6" fill="#0F0F0F" />
+      <rect x="0" y="0" width="64" height="32" rx="6" fill="#FFC700" stroke="#0F0F0F" stroke-width="2.2" />
+      <text x="16" y="21" class="pill-stamp" fill="#0F0F0F">C++</text>
+
+      <rect x="79" y="3" width="52" height="32" rx="6" fill="#0F0F0F" />
+      <rect x="76" y="0" width="52" height="32" rx="6" fill="#FFFDF9" stroke="#0F0F0F" stroke-width="2.2" />
+      <text x="95" y="21" class="pill-stamp" fill="#0F0F0F">C</text>
+
+      <rect x="143" y="3" width="76" height="32" rx="6" fill="#0F0F0F" />
+      <rect x="140" y="0" width="76" height="32" rx="6" fill="#FF3300" stroke="#0F0F0F" stroke-width="2.2" />
+      <text x="156" y="21" class="pill-stamp" fill="#F5F0E6">RUST</text>
+
+      <rect x="3" y="49" width="92" height="32" rx="6" fill="#0F0F0F" />
+      <rect x="0" y="46" width="92" height="32" rx="6" fill="#FFFDF9" stroke="#0F0F0F" stroke-width="2.2" />
+      <text x="16" y="67" class="pill-stamp" fill="#0F0F0F">RAYLIB</text>
+
+      <rect x="107" y="49" width="88" height="32" rx="6" fill="#0F0F0F" />
+      <rect x="104" y="46" width="88" height="32" rx="6" fill="#0038FF" stroke="#0F0F0F" stroke-width="2.2" />
+      <text x="120" y="67" class="pill-stamp" fill="#F5F0E6">CMAKE</text>
+
+      <rect x="3" y="95" width="106" height="32" rx="6" fill="#0F0F0F" />
+      <rect x="0" y="92" width="106" height="32" rx="6" fill="#FFC700" stroke="#0F0F0F" stroke-width="2.2" />
+      <text x="15" y="113" class="pill-stamp" fill="#0F0F0F">ARDUINO</text>
+
+      <rect x="121" y="95" width="74" height="32" rx="6" fill="#0F0F0F" />
+      <rect x="118" y="92" width="74" height="32" rx="6" fill="#FFFDF9" stroke="#0F0F0F" stroke-width="2.2" />
+      <text x="138" y="113" class="pill-stamp" fill="#0F0F0F">GIT</text>
+    </g>
+  </g>
+
+  <!-- CARD 2: THE LAB (ML, VISION & WEB) -->
+  <g class="card-2">
+    <rect x="8" y="8" width="322" height="364" rx="16" fill="#0F0F0F" />
+    <rect x="0" y="0" width="322" height="364" rx="16" fill="#F5F0E6" stroke="#0F0F0F" stroke-width="3.5" />
+    <rect x="0" y="0" width="322" height="364" rx="16" fill="url(#dotsBg)" />
+
+    <!-- Top Color Header Band -->
+    <path d="M 0 16 Q 0 0 16 0 L 306 0 Q 322 0 322 16 L 322 96 L 0 96 Z" fill="#FF3300" stroke="#0F0F0F" stroke-width="3.5" />
+
+    <!-- Masking Tape Strip -->
+    <rect x="108" y="-12" width="106" height="24" rx="2" fill="#FFFDF9" stroke="#0F0F0F" stroke-width="2" transform="rotate(2.5 161 0)" />
+    <text x="134" y="4" class="tape-label">side B</text>
+
+    <!-- Animated Vision Scanner Window -->
+    <rect x="230" y="34" width="72" height="44" rx="6" fill="#0F0F0F" stroke="#F5F0E6" stroke-width="2" />
+    <g class="scan-bar">
+      <rect x="234" y="38" width="6" height="36" rx="2" fill="#FFC700" />
+    </g>
+
+    <text x="24" y="42" class="card-kicker" fill="#FFC700">NEURAL &amp; WEB</text>
+    <text x="24" y="76" class="card-head" fill="#F5F0E6">VISION &amp; MODELS</text>
+
+    <text x="24" y="128" class="card-copy">Training deep learning models,</text>
+    <text x="24" y="148" class="card-copy">computer vision pipelines &amp; shipping</text>
+    <text x="24" y="168" class="card-copy">backend web services in Python.</text>
+
+    <!-- Tactile Stamped Tags -->
+    <g transform="translate(24, 192)">
+      <rect x="3" y="3" width="96" height="32" rx="6" fill="#0F0F0F" />
+      <rect x="0" y="0" width="96" height="32" rx="6" fill="#0038FF" stroke="#0F0F0F" stroke-width="2.2" />
+      <text x="15" y="21" class="pill-stamp" fill="#F5F0E6">PYTHON</text>
+
+      <rect x="109" y="3" width="134" height="32" rx="6" fill="#0F0F0F" />
+      <rect x="106" y="0" width="134" height="32" rx="6" fill="#FFC700" stroke="#0F0F0F" stroke-width="2.2" />
+      <text x="118" y="21" class="pill-stamp" fill="#0F0F0F">TENSORFLOW</text>
+
+      <rect x="3" y="49" width="96" height="32" rx="6" fill="#0F0F0F" />
+      <rect x="0" y="46" width="96" height="32" rx="6" fill="#FFFDF9" stroke="#0F0F0F" stroke-width="2.2" />
+      <text x="15" y="67" class="pill-stamp" fill="#0F0F0F">OPENCV</text>
+
+      <rect x="109" y="49" width="138" height="32" rx="6" fill="#0F0F0F" />
+      <rect x="106" y="46" width="138" height="32" rx="6" fill="#FF3300" stroke="#0F0F0F" stroke-width="2.2" />
+      <text x="118" y="67" class="pill-stamp" fill="#F5F0E6">SCIKIT-LEARN</text>
+
+      <rect x="3" y="95" width="94" height="32" rx="6" fill="#0F0F0F" />
+      <rect x="0" y="92" width="94" height="32" rx="6" fill="#FFC700" stroke="#0F0F0F" stroke-width="2.2" />
+      <text x="15" y="113" class="pill-stamp" fill="#0F0F0F">DJANGO</text>
+
+      <rect x="107" y="95" width="84" height="32" rx="6" fill="#0F0F0F" />
+      <rect x="104" y="92" width="84" height="32" rx="6" fill="#FFFDF9" stroke="#0F0F0F" stroke-width="2.2" />
+      <text x="120" y="113" class="pill-stamp" fill="#0F0F0F">FLASK</text>
+
+      <rect x="201" y="95" width="76" height="32" rx="6" fill="#0F0F0F" />
+      <rect x="198" y="92" width="76" height="32" rx="6" fill="#0038FF" stroke="#0F0F0F" stroke-width="2.2" />
+      <text x="212" y="113" class="pill-stamp" fill="#F5F0E6">NGINX</text>
+    </g>
+  </g>
+
+  <!-- CARD 3: OFF THE CLOCK (DRUMS, RUNNING & MEDIA) -->
+  <g class="card-3">
+    <rect x="8" y="8" width="322" height="364" rx="16" fill="#0F0F0F" />
+    <rect x="0" y="0" width="322" height="364" rx="16" fill="#F5F0E6" stroke="#0F0F0F" stroke-width="3.5" />
+    <rect x="0" y="0" width="322" height="364" rx="16" fill="url(#dotsBg)" />
+
+    <!-- Top Color Header Band -->
+    <path d="M 0 16 Q 0 0 16 0 L 306 0 Q 322 0 322 16 L 322 96 L 0 96 Z" fill="#FFC700" stroke="#0F0F0F" stroke-width="3.5" />
+
+    <!-- Masking Tape Strip -->
+    <rect x="108" y="-12" width="106" height="24" rx="2" fill="#FF3300" stroke="#0F0F0F" stroke-width="2" transform="rotate(-2 161 0)" />
+    <text x="128" y="4" class="tape-label" fill="#F5F0E6">bonus track</text>
+
+    <!-- Swinging Metronome Needle -->
+    <polygon points="260,82 296,82 286,32 270,32" fill="#F5F0E6" stroke="#0F0F0F" stroke-width="2.5" />
+    <g class="pendulum">
+      <line x1="278" y1="80" x2="278" y2="34" stroke="#FF3300" stroke-width="3" stroke-linecap="round" />
+      <rect x="273" y="44" width="10" height="8" rx="2" fill="#0F0F0F" />
+    </g>
+
+    <text x="24" y="42" class="card-kicker" fill="#0F0F0F">ANALOG LIFE</text>
+    <text x="24" y="76" class="card-head" fill="#0F0F0F">RHYTHM &amp; MILES</text>
+
+    <text x="24" y="128" class="card-copy">Locking in polyrhythms on the drum</text>
+    <text x="24" y="148" class="card-copy">kit, chasing faster 5K/10K road times,</text>
+    <text x="24" y="168" class="card-copy">lifting heavy &amp; cutting video edits.</text>
+
+    <!-- Tactile Stamped Tags -->
+    <g transform="translate(24, 192)">
+      <rect x="3" y="3" width="132" height="32" rx="6" fill="#0F0F0F" />
+      <rect x="0" y="0" width="132" height="32" rx="6" fill="#FF3300" stroke="#0F0F0F" stroke-width="2.2" />
+      <text x="14" y="21" class="pill-stamp" fill="#F5F0E6">PERCUSSION 🥁</text>
+
+      <rect x="145" y="3" width="128" height="32" rx="6" fill="#0F0F0F" />
+      <rect x="142" y="0" width="128" height="32" rx="6" fill="#FFFDF9" stroke="#0F0F0F" stroke-width="2.2" />
+      <text x="156" y="21" class="pill-stamp" fill="#0F0F0F">5K / 10K RUNS</text>
+
+      <rect x="3" y="49" width="126" height="32" rx="6" fill="#0F0F0F" />
+      <rect x="0" y="46" width="126" height="32" rx="6" fill="#0038FF" stroke="#0F0F0F" stroke-width="2.2" />
+      <text x="14" y="67" class="pill-stamp" fill="#F5F0E6">PREMIERE PRO</text>
+
+      <rect x="139" y="49" width="134" height="32" rx="6" fill="#0F0F0F" />
+      <rect x="136" y="46" width="134" height="32" rx="6" fill="#FFC700" stroke="#0F0F0F" stroke-width="2.2" />
+      <text x="148" y="67" class="pill-stamp" fill="#0F0F0F">AFTER EFFECTS</text>
+
+      <rect x="3" y="95" width="82" height="32" rx="6" fill="#0F0F0F" />
+      <rect x="0" y="92" width="82" height="32" rx="6" fill="#FFFDF9" stroke="#0F0F0F" stroke-width="2.2" />
+      <text x="16" y="113" class="pill-stamp" fill="#0F0F0F">FIGMA</text>
+
+      <rect x="97" y="95" width="176" height="32" rx="6" fill="#0F0F0F" />
+      <rect x="94" y="92" width="176" height="32" rx="6" fill="#FF3300" stroke="#0F0F0F" stroke-width="2.2" />
+      <text x="108" y="113" class="pill-stamp" fill="#F5F0E6">STRENGTH TRAINING</text>
+    </g>
+  </g>
+</svg>

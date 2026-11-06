@@ -1,0 +1,99 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1080 250" width="100%" height="100%">
+  <defs>
+    <pattern id="dotsBg" width="18" height="18" patternUnits="userSpaceOnUse">
+      <circle cx="3" cy="3" r="1.3" fill="#0F0F0F" opacity="0.12" />
+    </pattern>
+  </defs>
+
+  <style>
+    .card-kicker {
+      font: 900 11.5px 'Arial Black', 'Helvetica Neue', sans-serif;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      fill: #FFC700;
+    }
+    .card-head {
+      font: 900 44px 'Impact', 'Arial Black', sans-serif;
+      letter-spacing: -0.5px;
+      text-transform: uppercase;
+      fill: #F5F0E6;
+    }
+    .card-copy {
+      font: 700 16px 'Georgia', serif;
+      fill: #0F0F0F;
+    }
+    .pill-stamp {
+      font: 900 12px 'Arial Black', 'Helvetica Neue', sans-serif;
+      letter-spacing: 0.8px;
+    }
+    .tape-label {
+      font: italic 700 12px 'Georgia', serif;
+      fill: #0F0F0F;
+    }
+
+    @keyframes cardFloat {
+      0%, 100% { transform: translate(24px, 20px) rotate(-0.5deg); }
+      50% { transform: translate(24px, 16px) rotate(0.2deg); }
+    }
+    @keyframes spinVinyl {
+      from { transform: rotate(0deg); }
+      to { transform: rotate(360deg); }
+    }
+
+    .hero-card {
+      animation: cardFloat 5s ease-in-out infinite;
+    }
+    .vinyl {
+      animation: spinVinyl 10s linear infinite;
+      transform-origin: 910px 112px;
+    }
+  </style>
+
+  <g class="hero-card">
+    <!-- Hard Offset Shadow (matches playground.svg) -->
+    <rect x="8" y="8" width="1024" height="206" rx="16" fill="#0F0F0F" />
+    <rect x="0" y="0" width="1024" height="206" rx="16" fill="#F5F0E6" stroke="#0F0F0F" stroke-width="3.5" />
+    <rect x="0" y="0" width="1024" height="206" rx="16" fill="url(#dotsBg)" />
+
+    <!-- Top Color Header Band -->
+    <path d="M 0 16 Q 0 0 16 0 L 1008 0 Q 1024 0 1024 16 L 1024 92 L 0 92 Z" fill="#0F0F0F" stroke="#0F0F0F" stroke-width="3.5" />
+
+    <!-- Masking Tape Strip at Top Center -->
+    <rect x="448" y="-12" width="128" height="24" rx="2" fill="#FFC700" stroke="#0F0F0F" stroke-width="2" transform="rotate(-1.8 512 0)" />
+    <text x="484" y="4" class="tape-label">intro tape</text>
+
+    <!-- Header Text -->
+    <text x="32" y="34" class="card-kicker">CS @ IIIT BHUBANESWAR • SYSTEMS &amp; ML</text>
+    <text x="32" y="78" class="card-head">RISHAV KUMAR</text>
+
+    <!-- Minimal Bio Line -->
+    <text x="32" y="130" class="card-copy">
+      Building low-level systems in C, C++ &amp; Rust, training vision/ML models in Python, and playing drums at 140 BPM.
+    </text>
+
+    <!-- Stamped Action Pills (matches playground.svg pills) -->
+    <g transform="translate(32, 150)">
+      <rect x="3" y="3" width="272" height="34" rx="6" fill="#0F0F0F" />
+      <rect x="0" y="0" width="272" height="34" rx="6" fill="#FF3300" stroke="#0F0F0F" stroke-width="2.2" />
+      <text x="16" y="22" class="pill-stamp" fill="#F5F0E6">PORTFOLIO: RISHAV-NETIZEN.GITHUB.IO ↗</text>
+
+      <rect x="291" y="3" width="256" height="34" rx="6" fill="#0F0F0F" />
+      <rect x="288" y="0" width="256" height="34" rx="6" fill="#FFC700" stroke="#0F0F0F" stroke-width="2.2" />
+      <text x="304" y="22" class="pill-stamp" fill="#0F0F0F">RISHAVKUMAR2K07@GMAIL.COM</text>
+
+      <rect x="563" y="3" width="142" height="34" rx="6" fill="#0F0F0F" />
+      <rect x="560" y="0" width="142" height="34" rx="6" fill="#0038FF" stroke="#0F0F0F" stroke-width="2.2" />
+      <text x="576" y="22" class="pill-stamp" fill="#F5F0E6">@RISHAAAVV_</text>
+    </g>
+
+    <!-- Minimal Spinning Vinyl Accent on Right -->
+    <g class="vinyl">
+      <circle cx="910" cy="112" r="68" fill="#0F0F0F" stroke="#F5F0E6" stroke-width="2.5" />
+      <circle cx="910" cy="112" r="54" fill="none" stroke="#27272A" stroke-width="1.2" />
+      <circle cx="910" cy="112" r="40" fill="none" stroke="#27272A" stroke-width="1.2" />
+      <circle cx="910" cy="112" r="24" fill="#FFC700" stroke="#0F0F0F" stroke-width="2.5" />
+      <path d="M 910 88 A 24 24 0 0 1 934 112 L 910 112 Z" fill="#FF3300" />
+      <circle cx="910" cy="112" r="6" fill="#F5F0E6" stroke="#0F0F0F" stroke-width="2" />
+    </g>
+  </g>
+</svg>
